@@ -8,6 +8,7 @@ or by saving the files in the Macro folder under the ParaView configuration file
 
 **Linux**
 > mkdir ~/.config/ParaView/Macros
+
 > cp <macro.py> ~/.config/ParaView/Macros/.
 
 
