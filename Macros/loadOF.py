@@ -19,7 +19,11 @@ animationScene1 = GetAnimationScene()
 animationScene1.UpdateAnimationUsingDataTimeSteps()
 
 # Properties modified on setupfoam
-setupfoam.CaseType = 'Decomposed Case'
+if Path('processor1').exists():
+    setupfoam.CaseType = 'Decomposed Case'
+else:
+    setupfoam.CaseType = 'Reconstructed Case'
+
 
 # get active view
 renderView1 = GetActiveViewOrCreate('RenderView')
